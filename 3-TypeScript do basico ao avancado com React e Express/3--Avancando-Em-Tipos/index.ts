@@ -99,6 +99,7 @@ showNumbers(1, 2, 3)
 showNumbers(4, 5)
 //showNumbers(6)
 
+
 // 9 - validando argumento opcioinal
 function advancedGreeting (firstName: string, lastName?: string) {
 
@@ -111,6 +112,7 @@ function advancedGreeting (firstName: string, lastName?: string) {
 
 console.log (advancedGreeting('Higor', 'Braga'))
 console.log (advancedGreeting('Laura'))
+
 
 //10 - union type
 function showBalance (balance: string | number) {
