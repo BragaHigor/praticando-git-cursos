@@ -76,3 +76,21 @@ function doSomething(x) {
 }
 doSomething([1, 2, 3]);
 doSomething(5);
+// 9 - never
+function showErrorMessage(msg) {
+    throw new Error(msg);
+}
+// showErrorMessage('Algum erro!')
+// 10 - rest operator
+function sumAll(...n) {
+    return n.reduce((number, sum) => sum + number);
+}
+console.log(sumAll(1, 2, 3, 4, 5));
+console.log(sumAll(5, 348, 2348));
+// console.log(sumAll('teste'))
+// 11 - destructuring em parâmetros
+function showProductDetailes({ name, price }) {
+    return `O nome do produto é ${name} e ele custa R$ ${price}`;
+}
+const shirt = { name: "Camisa", price: 49.99 };
+console.log(showProductDetailes(shirt));
